@@ -15,5 +15,6 @@
   },
   "devDependencies": {
     "cerebro-build": "^1.1.1"
-  }
+  },
+  "repository": "https://github.com/cerebroapp/search.git"
 }
