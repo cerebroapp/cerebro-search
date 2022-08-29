@@ -13,7 +13,7 @@
     "build": "cerebro-build build",
     "prepublish": "cerebro-build clear && yarn build"
   },
-  "dependencies": {
+  "devDependencies": {
     "cerebro-build": "^1.1.1"
   }
 }
