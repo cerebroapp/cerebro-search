@@ -1,14 +1,17 @@
 {
-  "name": "search",
+  "name": "@cerebroapp/search",
   "version": "1.0.0-alpha.1",
   "description": "Use your favourite search engine in CerebroApp",
   "main": "dist/index.js",
   "author": "David Jiménez <dubisdev@gmail.com> (https://dubis.dev)",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "cerebro-build dev",
     "build": "cerebro-build build",
-    "prepublish": "cerebro-build clean && yarn build"
+    "prepublish": "cerebro-build clear && yarn build"
   },
   "dependencies": {
     "cerebro-build": "^1.1.1"
