@@ -5,8 +5,12 @@ enum SearchEngines {
   Ecosia,
 }
 
+/**
+ * @returns A valid options array with each search engine name and label
+ */
 const generateOptions = () => {
-  const options: any = [];
+  const options: Array<{ value: string; label: string }> = [];
+
   for (let value in SearchEngines) {
     const isValueProperty = Number(value) >= 0;
     if (isValueProperty) options.push({ value, label: SearchEngines[value] });
