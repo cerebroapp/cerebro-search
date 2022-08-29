@@ -1,20 +1,21 @@
-enum SearchEngines {
-  Google,
-  Brave,
-  DuckDuckGo,
-  Ecosia,
-}
+import { Engine } from "types";
+
+export const SearchEngines: Engine[] = [
+  "Google",
+  "Brave",
+  "DuckDuckGo",
+  "Ecosia",
+];
 
 /**
  * @returns A valid options array with each search engine name and label
  */
-const generateOptions = () => {
-  const options: Array<{ value: string; label: string }> = [];
+const generateOptions = (): Array<{ value: string; label: string }> => {
+  const options = SearchEngines.map((engine) => ({
+    value: engine,
+    label: engine,
+  }));
 
-  for (let value in SearchEngines) {
-    const isValueProperty = Number(value) >= 0;
-    if (isValueProperty) options.push({ value, label: SearchEngines[value] });
-  }
   return options;
 };
 
