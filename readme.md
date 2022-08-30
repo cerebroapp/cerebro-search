@@ -16,7 +16,7 @@
 This search engines are natively supported by this plugin, including suggestions.
 You just need to select one of them from the plugin settings dropdown.
 
-- [ ] Google (default)
+- [x] Google (default)
 - [ ] DuckDuckGo
 - [ ] Ecosia
 - [ ] Brave
