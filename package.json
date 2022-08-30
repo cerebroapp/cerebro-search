@@ -21,5 +21,8 @@
   "devDependencies": {
     "cerebro-build": "^1.1.1"
   },
-  "repository": "https://github.com/cerebroapp/search.git"
+  "repository": "https://github.com/cerebroapp/search.git",
+  "dependencies": {
+    "@cerebroapp/cerebro-ui": "^1.0.4"
+  }
 }
