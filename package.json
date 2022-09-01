@@ -1,6 +1,6 @@
 {
   "name": "@cerebroapp/search",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Use your favourite search engine in CerebroApp",
   "main": "dist/index.js",
   "author": "David Jiménez <dubisdev@gmail.com> (https://dubis.dev)",
