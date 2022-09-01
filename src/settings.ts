@@ -23,7 +23,7 @@ export default {
   "Search Engine": {
     type: "option",
     options: generateOptions(),
-    defaultValue: "a",
+    defaultValue: "Google",
     description: "Select a search engine",
   },
   "Search Link": {
