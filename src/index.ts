@@ -1,4 +1,4 @@
-import { google } from "handlers";
+import { google, duckduckgo } from "handlers";
 import { Engine } from "types";
 import icon from "./icons/default.png";
 
@@ -16,6 +16,8 @@ export const fn = ({ term, actions, settings, display }) => {
   switch (settings["Search Engine"] as Engine) {
     case "Google":
       return google({ term, actions, display });
+    case "DuckDuckGo":
+      return duckduckgo({ term, actions, display });
   }
 };
 

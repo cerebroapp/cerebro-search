@@ -1,13 +1,12 @@
 import { EngineHandler, Suggestion, SuggestionGetter } from "types";
-import icon from "icons/google.png";
+import icon from "icons/duckduckgo.png";
 import ShowSuggestions from "components/ShowSuggestions";
 
-const SUGGESTIONS_URL =
-  "http://suggestqueries.google.com/complete/search?client=firefox&q=";
+const SUGGESTIONS_URL = "https://duckduckgo.com/ac/?q=";
 
-const SEARCH_URL = "https://www.google.com/search?q=";
+const SEARCH_URL = "https://duckduckgo.com/?q=";
 
-const google: EngineHandler = ({ term, actions, display }) => {
+const duckduckgo: EngineHandler = ({ term, actions, display }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -29,18 +28,18 @@ const google: EngineHandler = ({ term, actions, display }) => {
   });
 };
 
-export default google;
+export default duckduckgo;
 
 /**
- * Get google suggestions for entered query
+ * Get suggestions for entered query
  */
 const getSuggestions: SuggestionGetter = async (term: string) => {
   return fetch(`${SUGGESTIONS_URL}${term}`)
     .then((response) => response.json())
-    .then((response) => (response[1] || []) as string[])
+    .then((response) => (response || []) as { phrase: string }[])
     .then((res) => res.map(mapToSuggestion));
 };
 
-const mapToSuggestion = (suggestion: string): Suggestion => ({
-  title: suggestion,
+const mapToSuggestion = ({ phrase }: { phrase: string }): Suggestion => ({
+  title: phrase,
 });
