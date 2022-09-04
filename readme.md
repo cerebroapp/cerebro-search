@@ -1,6 +1,4 @@
-> ⚠️ This plugin is currently in development. ⚠️
->
-> It is being developed for a **future version of CerebroApp** that hasn't been released yet.
+> ⚠️ This plugin is being developed for a **future version of CerebroApp** that hasn't been released yet.
 > For now custom scoped package functionality is limited and doesn't support settings, that are a need for using this plugin.
 >
 > For now we suggest using alternatives like `cerebro-google`, `cerebro-ecosia` or `cerebro-duckduckgo`.
@@ -19,7 +17,7 @@ You just need to select one of them from the plugin settings dropdown.
 - [x] Google (default)
 - [x] DuckDuckGo
 - [x] Ecosia
-- [ ] Brave
+- [x] Brave
 
 > The plugin is currently in development so not all search engines are implemented yet.
 >
@@ -39,3 +37,11 @@ Some examples (note recommended as they are native implemented):
 
 The downside of this is that you can't get suggestions, this just opens the query in the search engine in your browser.
 > We encourage you to open an issue so we know what engines are missing.
+
+## Related
+
+This plugin is based the individual implementations of each search engine plugin:
+
+- [cerebro-google](https://github.com/cerebroapp/cerebro-google)
+- [cerebro-duckduckgo](https://github.com/cerebroapp/cerebro-duck-duck-go)
+- [cerebro-ecosia](https://github.com/dubisdev/cerebro-ecosia)
