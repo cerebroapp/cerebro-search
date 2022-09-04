@@ -1,4 +1,4 @@
-import { google, duckduckgo, ecosia } from "handlers";
+import { google, duckduckgo, ecosia, brave } from "handlers";
 import { Engine, EngineHandler } from "types";
 import icon from "./icons/default.png";
 
@@ -6,7 +6,7 @@ const Engines: Record<Engine, EngineHandler> = {
   Google: google,
   DuckDuckGo: duckduckgo,
   Ecosia: ecosia,
-  Brave: () => {},
+  Brave: brave,
 };
 
 export const fn = ({ term, actions, settings, display }) => {

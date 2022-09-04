@@ -1,13 +1,12 @@
 import { EngineHandler, Suggestion, SuggestionGetter } from "types";
-import icon from "icons/google.png";
+import icon from "icons/brave.png";
 import ShowSuggestions from "components/ShowSuggestions";
 
-const SUGGESTIONS_URL =
-  "http://suggestqueries.google.com/complete/search?client=firefox&q=";
+const SUGGESTIONS_URL = "https://search.brave.com/api/suggest?q=";
 
-const SEARCH_URL = "https://www.google.com/search?q=";
+const SEARCH_URL = "https://search.brave.com/search?q=";
 
-const google: EngineHandler = ({ term, actions, display }) => {
+const brave: EngineHandler = ({ term, actions, display }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -29,7 +28,7 @@ const google: EngineHandler = ({ term, actions, display }) => {
   });
 };
 
-export default google;
+export default brave;
 
 /**
  * Get suggestions for entered query
