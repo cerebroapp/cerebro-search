@@ -1,6 +1,13 @@
-import { google, duckduckgo } from "handlers";
-import { Engine } from "types";
+import { google, duckduckgo, ecosia } from "handlers";
+import { Engine, EngineHandler } from "types";
 import icon from "./icons/default.png";
+
+const Engines: Record<Engine, EngineHandler> = {
+  Google: google,
+  DuckDuckGo: duckduckgo,
+  Ecosia: ecosia,
+  Brave: () => {},
+};
 
 export const fn = ({ term, actions, settings, display }) => {
   if (!navigator.onLine) return;
@@ -13,12 +20,8 @@ export const fn = ({ term, actions, settings, display }) => {
   }
 
   // handle built-in search engines
-  switch (settings["Search Engine"] as Engine) {
-    case "Google":
-      return google({ term, actions, display });
-    case "DuckDuckGo":
-      return duckduckgo({ term, actions, display });
-  }
+  const engine = Engines[settings["Search Engine"] as Engine] || Engines.Google;
+  return engine({ term, actions, display });
 };
 
 export { default as settings } from "./settings";
