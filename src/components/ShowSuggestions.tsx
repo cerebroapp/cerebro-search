@@ -19,7 +19,7 @@ const ShowSuggestions = ({
   searchFn,
 }: ShowSuggestionProps) => {
   return (
-    <Preload promise={suggestionGetter(term)} loader={<Loading />}>
+    <Preload promise={suggestionGetter(term)} loader={<Loading />} key={term}>
       {(suggestions: Suggestion[]) => {
         return (
           <div className={styles.wrapper}>

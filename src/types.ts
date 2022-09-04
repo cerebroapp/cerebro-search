@@ -10,6 +10,6 @@ export type Suggestion = {
   description?: string;
 };
 
-export type SuggestionGetter = (term: string) => Promise<Suggestion[]>;
+export type SuggestionGetter = (apiResult: any) => Promise<Suggestion[]>;
 
 export type Engine = "Google" | "DuckDuckGo" | "Ecosia" | "Brave";

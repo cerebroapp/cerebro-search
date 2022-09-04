@@ -5,5 +5,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "baseUrl": "src",
+    "strict": true,
+    "noImplicitAny": false
   }
 }
