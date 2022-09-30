@@ -1,11 +1,8 @@
-> ⚠️ This plugin is being developed for a **future version of CerebroApp** that hasn't been released yet.
-> For now custom scoped package functionality is limited and doesn't support settings, that are a need for using this plugin.
->
-> For now we suggest using alternatives like `cerebro-google`, `cerebro-ecosia` or `cerebro-duckduckgo`.
-
 # @cerebroapp/search
 
 > Use your favourite search engine in CerebroApp
+
+⚠️ Requires Cerebro `v0.7.0` or higher
 
 ## Features
 
