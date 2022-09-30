@@ -5,6 +5,7 @@ export const SearchEngines: Engine[] = [
   "Brave",
   "DuckDuckGo",
   "Ecosia",
+  "MetaGer",
 ];
 
 /**
@@ -23,7 +24,7 @@ export default {
   "Search Engine": {
     type: "option",
     options: generateOptions(),
-    defaultValue: "Google",
+    defaultValue: { value: "Google", label: "Google" },
     description: "Select a search engine",
   },
   "Search Link": {
