@@ -6,6 +6,7 @@ export const SearchEngines: Engine[] = [
   "DuckDuckGo",
   "Ecosia",
   "MetaGer",
+  "StartPage",
 ];
 
 /**

@@ -12,4 +12,10 @@ export type Suggestion = {
 
 export type SuggestionGetter = (apiResult: any) => Promise<Suggestion[]>;
 
-export type Engine = "Google" | "DuckDuckGo" | "Ecosia" | "Brave" | "MetaGer";
+export type Engine =
+  | "Google"
+  | "DuckDuckGo"
+  | "Ecosia"
+  | "Brave"
+  | "MetaGer"
+  | "StartPage";

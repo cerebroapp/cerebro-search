@@ -15,6 +15,8 @@ You just need to select one of them from the plugin settings dropdown.
 - [x] DuckDuckGo
 - [x] Ecosia
 - [x] Brave
+- [x] MetaGer
+- [x] StartPage
 
 > The plugin is currently in development so not all search engines are implemented yet.
 >
