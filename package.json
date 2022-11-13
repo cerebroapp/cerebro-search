@@ -1,6 +1,6 @@
 {
   "name": "@cerebroapp/search",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Use your favourite search engine in CerebroApp",
   "main": "dist/index.js",
   "author": "David Jiménez <dubisdev@gmail.com> (https://dubis.dev)",
@@ -23,6 +23,6 @@
   },
   "repository": "https://github.com/cerebroapp/search.git",
   "dependencies": {
-    "@cerebroapp/cerebro-ui": "^1.0.4"
+    "@cerebroapp/cerebro-ui": "^2.0.0-alpha.3"
   }
 }
