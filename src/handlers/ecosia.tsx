@@ -6,7 +6,7 @@ const SUGGESTIONS_URL = "http://ac.ecosia.org/autocomplete?q=";
 
 const SEARCH_URL = "https://www.ecosia.org/search?q=";
 
-const ecosia: EngineHandler = ({ term, actions, display }) => {
+const ecosia: EngineHandler = ({ term, actions, display, order }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -25,6 +25,7 @@ const ecosia: EngineHandler = ({ term, actions, display }) => {
         searchFn={searchFn}
       />
     ),
+    order
   });
 };
 
