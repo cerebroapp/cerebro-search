@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "baseUrl": "src",
     "strict": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "jsx": "react-jsx"
   }
 }

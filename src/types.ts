@@ -2,6 +2,7 @@ export type EngineArgs = {
   term: string;
   actions: Record<string, any>;
   display: ({}) => void;
+  order: number;
 };
 export type EngineHandler = (args: EngineArgs) => void;
 

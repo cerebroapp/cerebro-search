@@ -6,7 +6,7 @@ const SUGGESTIONS_URL = "https://search.brave.com/api/suggest?q=";
 
 const SEARCH_URL = "https://search.brave.com/search?q=";
 
-const brave: EngineHandler = ({ term, actions, display }) => {
+const brave: EngineHandler = ({ term, actions, display, order }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -25,6 +25,7 @@ const brave: EngineHandler = ({ term, actions, display }) => {
         searchFn={searchFn}
       />
     ),
+    order
   });
 };
 

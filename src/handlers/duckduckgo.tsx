@@ -6,7 +6,7 @@ const SUGGESTIONS_URL = "https://duckduckgo.com/ac/?q=";
 
 const SEARCH_URL = "https://duckduckgo.com/?q=";
 
-const duckduckgo: EngineHandler = ({ term, actions, display }) => {
+const duckduckgo: EngineHandler = ({ term, actions, display, order }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -25,6 +25,7 @@ const duckduckgo: EngineHandler = ({ term, actions, display }) => {
         searchFn={searchFn}
       />
     ),
+    order
   });
 };
 

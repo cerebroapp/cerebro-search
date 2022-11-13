@@ -7,7 +7,7 @@ const SUGGESTIONS_URL =
 
 const SEARCH_URL = "https://www.startpage.com/search?query=";
 
-const startpage: EngineHandler = ({ term, actions, display }) => {
+const startpage: EngineHandler = ({ term, actions, display, order }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -26,6 +26,7 @@ const startpage: EngineHandler = ({ term, actions, display }) => {
         searchFn={searchFn}
       />
     ),
+    order
   });
 };
 

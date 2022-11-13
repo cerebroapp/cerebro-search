@@ -6,7 +6,7 @@ const SEARCH_URL = "https://metager.es/meta/meta.ger3?eingabe=";
 /**
  * NOTE: MetaGer does not support suggestions.
  */
-const metager: EngineHandler = ({ term, actions, display }) => {
+const metager: EngineHandler = ({ term, actions, display, order }) => {
   const title = `Search: ${term}`;
 
   const searchFn = (q: string) => {
@@ -18,6 +18,7 @@ const metager: EngineHandler = ({ term, actions, display }) => {
     title,
     icon,
     onSelect: () => searchFn(term),
+    order
   });
 };
 
